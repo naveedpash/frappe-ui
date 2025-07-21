@@ -296,7 +296,8 @@ img.ProseMirror-selectednode {
   top: 0;
   bottom: 0;
   pointer-events: none;
-  background: theme('colors.blue.200');
+  /* background: theme('colors.blue.200'); */
+  background: var(--color-blue-200);
   opacity: 0.3;
 }
 
@@ -306,7 +307,8 @@ img.ProseMirror-selectednode {
   top: 0;
   bottom: -2px;
   width: 4px;
-  background-color: theme('colors.blue.200');
+  /* background-color: theme('colors.blue.200'); */
+  background-color: var(--color-blue-200);
   pointer-events: none;
 }
 
@@ -344,7 +346,8 @@ img.ProseMirror-selectednode {
     width: 14px;
     height: 14px;
     border-radius: 4px;
-    color: theme('colors.gray.900');
+    /* color: theme('colors.gray.900'); */
+    color: var(--color-gray-900)
   }
 }
 

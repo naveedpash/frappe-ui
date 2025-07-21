@@ -1,9 +1,5 @@
 import { HstVue } from '@histoire/plugin-vue'
 import { defineConfig } from 'histoire'
-import resolveConfig from 'tailwindcss/resolveConfig'
-import tailwindConfig from './tailwind.config.js'
-
-const fullConfig = resolveConfig(tailwindConfig)
 
 export default defineConfig({
   setupFile: './histoire.setup.ts',
