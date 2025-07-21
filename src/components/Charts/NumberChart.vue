@@ -8,7 +8,7 @@
         {{ config.title }}
       </span>
       <div
-        class="flex-1 flex-shrink-0 truncate text-[24px] font-semibold leading-10"
+        class="flex-1 shrink-0 truncate text-[24px] font-semibold leading-10"
       >
         {{ config.prefix }}{{ formatValue(config.value, 1, true)
         }}{{ config.suffix }}

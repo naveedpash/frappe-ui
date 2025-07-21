@@ -264,8 +264,8 @@ const cssClasses = {
   itemLabel: 'whitespace-nowrap text-ink-gray-7',
 
   // Icon classes
-  itemIcon: 'mr-2 h-4 w-4 flex-shrink-0 text-ink-gray-6',
-  chevronIcon: 'ml-auto h-4 w-4 flex-shrink-0 text-ink-gray-6',
+  itemIcon: 'mr-2 h-4 w-4 shrink-0 text-ink-gray-6',
+  chevronIcon: 'ml-auto h-4 w-4 shrink-0 text-ink-gray-6',
 
   // Button classes
   itemButton:

@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col overflow-y-auto">
     <!-- Day List -->
-    <div class="flex border-b-[1px]">
+    <div class="flex border-b">
       <div class="w-16"></div>
       <div class="mb-2 grid w-full grid-cols-7">
         <span
@@ -22,7 +22,7 @@
 
     <div
       class="relative flex h-full flex-col overflow-auto border-outline-gray-1"
-      :class="[config.noBorder ? '' : 'border-b-[1px] border-l-[1px]']"
+      :class="[config.noBorder ? '' : 'border-b border-l']"
       ref="gridRef"
     >
       <div class="flex">
@@ -41,9 +41,9 @@
           <div class="grid w-full grid-cols-7">
             <div v-for="(date, idx) in weeklyDates">
               <div
-                class="flex w-full flex-col gap-1 border-b-[1px] border-r-[1px] border-outline-gray-1 transition-all"
+                class="flex w-full flex-col gap-1 border-b border-r border-outline-gray-1 transition-all"
                 :class="[
-                  idx === 0 && 'relative border-l-[1px]',
+                  idx === 0 && 'relative border-l',
                   config.noBorder &&
                     idx === weeklyDates.length - 1 &&
                     'border-r-0',
@@ -63,7 +63,7 @@
                     v-for="(calendarEvent, idx) in fullDayEvents[
                       parseDate(date)
                     ]"
-                    class="!z-1 mb-1 w-[90%] cursor-pointer"
+                    class="z-1! mb-1 w-[90%] cursor-pointer"
                     :event="{ ...calendarEvent, idx }"
                     :key="calendarEvent.id"
                     :date="date"
@@ -87,9 +87,9 @@
             <!-- 7 Columns -->
             <div
               v-for="(date, idx) in weeklyDates"
-              class="relative w-full border-r-[1px] border-outline-gray-1"
+              class="relative w-full border-r border-outline-gray-1"
               :class="[
-                idx === 0 && 'calendar-column border-l-[1px]',
+                idx === 0 && 'calendar-column border-l',
                 config.noBorder &&
                   idx == weeklyDates.length - 1 &&
                   'border-r-0',
@@ -107,7 +107,7 @@
                 "
               >
                 <div
-                  class="border-outline-gray-1 w-full border-b-[1px]"
+                  class="border-outline-gray-1 w-full border-b"
                   :class="i === timeArray.length - 1 && 'border-b-0'"
                   :style="{ height: `${hourHeight}px` }"
                 />

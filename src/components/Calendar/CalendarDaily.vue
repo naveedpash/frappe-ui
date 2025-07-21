@@ -9,7 +9,7 @@
       <div
         class="flex h-full w-full overflow-scroll border-outline-gray-1"
         :class="[
-          config.noBorder ? 'border-t-[1px]' : 'border-[1px] border-r-0',
+          config.noBorder ? 'border-t' : 'border border-r-0',
         ]"
         ref="gridRef"
       >
@@ -25,11 +25,11 @@
         <!-- Calendar Grid / Right Column -->
         <div class="grid h-full w-full grid-cols-1 pb-2">
           <div
-            class="calendar-column relative border-r-[1px] border-l-[1px] border-outline-gray-1"
+            class="calendar-column relative border-r border-l border-outline-gray-1"
           >
             <!-- Top Redundant Cell before time starts for giving the calendar some space -->
             <div
-              class="flex h-[50px] w-full flex-wrap gap-2 overflow-y-scroll border-b-[1px] border-outline-gray-1 transition-all"
+              class="flex h-[50px] w-full flex-wrap gap-2 overflow-y-scroll border-b border-outline-gray-1 transition-all"
               :style="{ height: `${config.redundantCellHeight}px` }"
             >
               <CalendarEvent
@@ -53,7 +53,7 @@
               "
             >
               <div
-                class="w-full border-b-[1px] border-outline-gray-1"
+                class="w-full border-b border-outline-gray-1"
                 :style="{ height: `${hourHeight}px` }"
               />
             </div>

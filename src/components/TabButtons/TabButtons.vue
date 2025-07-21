@@ -1,7 +1,7 @@
 <template>
   <RadioGroup v-model="value">
     <div
-      class="flex space-x-0.5 rounded-md bg-surface-gray-2 h-7 items-center px-[1px] text-sm"
+      class="flex space-x-0.5 rounded-md bg-surface-gray-2 h-7 items-center px-px text-sm"
     >
       <RadioGroupOption
         as="div"
@@ -14,7 +14,7 @@
         <Button
           @click="button.onClick"
           v-bind="button"
-          class="!h-6.5"
+          class="h-6.5!"
           :class="[
             active ? 'ring-outline-gray-2 focus-visible:ring' : '',
             checked && '!bg-surface-white',

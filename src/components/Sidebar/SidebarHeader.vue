@@ -2,7 +2,7 @@
   <Dropdown :options="props.menuItems">
     <template v-slot="{ open }">
       <button
-        class="flex h-12 items-center rounded-md py-2 duration-300 ease-in-out w-[14rem]"
+        class="flex h-12 items-center rounded-md py-2 duration-300 ease-in-out w-56"
         :class="
           isCollapsed
             ? 'w-auto px-0'

@@ -48,7 +48,7 @@
           <!-- Caption overlay (visible when there's alt text) -->
           <div
             v-if="img.attrs.alt"
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent rounded-b-[2px] opacity-0 group-hover:opacity-100 transition-opacity"
+            class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/60 to-transparent rounded-b-[2px] opacity-0 group-hover:opacity-100 transition-opacity"
           >
             <div class="p-2">
               <div class="text-white text-xs truncate" :title="img.attrs.alt">

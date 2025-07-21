@@ -47,7 +47,7 @@
                     <component
                       v-if="option.icon"
                       :is="option.icon"
-                      class="size-4 flex-shrink-0 text-ink-gray-6"
+                      class="size-4 shrink-0 text-ink-gray-6"
                     />
                     <span
                       v-if="option.label"
@@ -79,7 +79,7 @@
             >
               <component v-if="button.icon" :is="button.icon" class="h-4 w-4" />
               <span
-                class="inline-block h-4 min-w-[1rem] text-sm leading-4"
+                class="inline-block h-4 min-w-4 text-sm leading-4"
                 v-else
               >
                 {{ button.text }}

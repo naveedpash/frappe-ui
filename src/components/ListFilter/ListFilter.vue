@@ -5,7 +5,7 @@
         <template #prefix><FilterIcon class="h-4" /></template>
         <template v-if="filters.size" #suffix>
           <div
-            class="flex h-5 w-5 items-center justify-center rounded bg-surface-gray-7 pt-[1px] text-2xs font-medium text-ink-white"
+            class="flex h-5 w-5 items-center justify-center rounded bg-surface-gray-7 pt-px text-2xs font-medium text-ink-white"
           >
             {{ filters.size }}
           </div>
@@ -26,11 +26,11 @@
           >
             <div class="flex flex-1 items-center gap-2">
               <div
-                class="w-13 flex-shrink-0 pl-2 text-end text-base text-ink-gray-5"
+                class="w-13 shrink-0 pl-2 text-end text-base text-ink-gray-5"
               >
                 {{ i == 0 ? 'Where' : 'And' }}
               </div>
-              <div id="fieldname" class="!min-w-[140px] flex-1">
+              <div id="fieldname" class="min-w-[140px]! flex-1">
                 <Autocomplete
                   :value="filter.fieldname"
                   :options="fields"
@@ -38,7 +38,7 @@
                   placeholder="Filter by..."
                 />
               </div>
-              <div id="operator" class="!min-w-[140px] flex-shrink-0">
+              <div id="operator" class="min-w-[140px]! shrink-0">
                 <FormControl
                   type="select"
                   :modelValue="filter.operator"
@@ -47,7 +47,7 @@
                   placeholder="Operator"
                 />
               </div>
-              <div id="value" class="!min-w-[140px] flex-1">
+              <div id="value" class="min-w-[140px]! flex-1">
                 <SearchComplete
                   v-if="
                     typeLink.includes(filter.field.fieldtype) &&
@@ -71,7 +71,7 @@
                 />
               </div>
             </div>
-            <div class="flex-shrink-0">
+            <div class="shrink-0">
               <Button variant="ghost" icon="x" @click="removeFilter(i)" />
             </div>
           </div>

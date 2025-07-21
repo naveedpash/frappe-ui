@@ -267,11 +267,11 @@ and `TextEditorFloatingMenu`.
 The `editor` slot renders the `TextEditorContent` component, you can override it
 and render the `TextEditorContent` component if you want some custom behaviour.
 
-<Story class="h-[15rem] !block" :iframe="false">
+<Story class="h-60 block!" :iframe="false">
   <Input class="mb-2" type="checkbox" v-model="editable" label="Editable" />
   <TextEditor
     class="border p-4 rounded-lg"
-    :editor-class="['prose-sm max-w-none min-h-[6rem]']"
+    :editor-class="['prose-sm max-w-none min-h-24']"
     :content="content2"
     @change="val => content2 = val"
     :starterkit-options="{ heading: { levels: [2, 3, 4, 5, 6] } }"
@@ -280,7 +280,7 @@ and render the `TextEditorContent` component if you want some custom behaviour.
   >
     <template v-slot:editor="{ editor }">
       <TextEditorContent
-        :class="[editable && 'max-h-[6rem] overflow-y-auto']"
+        :class="[editable && 'max-h-24 overflow-y-auto']"
         :editor="editor"
       />
     </template>
@@ -308,7 +308,7 @@ and render the `TextEditorContent` component if you want some custom behaviour.
   <Input class="mb-2" type="checkbox" v-model="editable" label="Editable" />
   <TextEditor
     class="rounded-lg border p-4"
-    :editor-class="['prose-sm max-w-none min-h-[6rem]']"
+    :editor-class="['prose-sm max-w-none min-h-24']"
     :content="content2"
     @change="(val) => (content2 = val)"
     :starterkit-options="{ heading: { levels: [2, 3, 4, 5, 6] } }"
@@ -317,7 +317,7 @@ and render the `TextEditorContent` component if you want some custom behaviour.
   >
     <template v-slot:editor="{ editor }">
       <TextEditorContent
-        :class="[editable && 'max-h-[6rem] overflow-y-auto']"
+        :class="[editable && 'max-h-24 overflow-y-auto']"
         :editor="editor"
       />
     </template>

@@ -48,9 +48,9 @@ const iconClasses = (index: number) => {
   ]
 
   if (index <= hoveredRating.value && index > rating.value) {
-    classes.push('!fill-yellow-200')
+    classes.push('fill-yellow-200!')
   } else if (index <= rating.value) {
-    classes.push('!fill-yellow-500')
+    classes.push('fill-yellow-500!')
   }
 
   if (!props.readonly) {

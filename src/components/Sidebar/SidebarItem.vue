@@ -2,7 +2,7 @@
   <Button
     :label="props.label"
     @click="handleClick"
-    class="!w-full"
+    class="w-full!"
     :class="
       props.isActive
         ? '!bg-surface-selected shadow-sm'
@@ -20,7 +20,7 @@
             placement="right"
             :disabled="!isCollapsed"
           >
-            <span class="grid flex-shrink-0 place-items-center">
+            <span class="grid shrink-0 place-items-center">
               <slot name="icon">
                 <span
                   v-if="props.icon && typeof props.icon === 'string'"
@@ -43,7 +43,7 @@
             :hoverDelay="1.5"
           >
             <span
-              class="flex-1 flex-shrink-0 truncate text-sm transition-all ease-in-out"
+              class="flex-1 shrink-0 truncate text-sm transition-all ease-in-out"
               :class="
                 isCollapsed
                   ? 'ml-0 w-0 overflow-hidden opacity-0'

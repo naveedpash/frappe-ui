@@ -15,7 +15,7 @@
         v-slot="{ open, close }"
         ref="popover"
         static
-        class="z-[100]"
+        class="z-100"
       >
         <slot name="body" v-bind="{ open, close }" />
       </PopoverPanel>

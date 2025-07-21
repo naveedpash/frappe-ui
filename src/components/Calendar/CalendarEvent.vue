@@ -8,7 +8,7 @@
     :class="[
       colorMap[props.event?.color]?.background_color || 'bg-green-100',
       'shadow-lg',
-      opened && '!z-20 drop-shadow-xl',
+      opened && 'z-20! drop-shadow-xl',
     ]"
     :style="setEventStyles"
     @dblclick.prevent="handleEventEdit($event)"
@@ -56,7 +56,7 @@
     </div>
     <div
       v-if="config.isEditMode && !event.isFullDay"
-      class="absolute h-[8px] w-[100%] cursor-row-resize"
+      class="absolute h-[8px] w-full cursor-row-resize"
       ref="resize"
       @mousedown="handleResizeMouseDown"
     />

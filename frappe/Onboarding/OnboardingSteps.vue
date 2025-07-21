@@ -62,13 +62,13 @@
         <Button
           v-if="!step.completed && !isDependent(step)"
           :label="'Skip'"
-          class="!h-4 text-xs !text-ink-gray-6 hidden group-hover:flex"
+          class="h-4! text-xs !text-ink-gray-6 hidden group-hover:flex"
           @click="() => skip(step.name, afterSkip)"
         />
         <Button
           v-else-if="!isDependent(step)"
           :label="'Reset'"
-          class="!h-4 text-xs !text-ink-gray-6 hidden group-hover:flex"
+          class="h-4! text-xs !text-ink-gray-6 hidden group-hover:flex"
           @click.stop="() => reset(step.name, afterReset)"
         />
       </div>

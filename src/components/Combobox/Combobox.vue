@@ -140,7 +140,7 @@ const RenderIcon: FunctionalComponent<{ icon?: string | Component }> = (
   return h(
     'span',
     {
-      class: 'flex-shrink-0 w-4 h-4 inline-flex items-center justify-center',
+      class: 'shrink-0 w-4 h-4 inline-flex items-center justify-center',
     },
     [iconContent],
   )
@@ -242,7 +242,7 @@ const handleBlur = (event: FocusEvent) => {
       </ComboboxAnchor>
       <ComboboxPortal>
         <ComboboxContent
-          class="z-10 min-w-[--reka-combobox-trigger-width] mt-1 bg-surface-modal overflow-hidden rounded-lg shadow-2xl"
+          class="z-10 min-w-(--reka-combobox-trigger-width) mt-1 bg-surface-modal overflow-hidden rounded-lg shadow-2xl"
           position="popper"
           @openAutoFocus.prevent
           @closeAutoFocus.prevent
@@ -272,7 +272,7 @@ const handleBlur = (event: FocusEvent) => {
                   :key="`${index}-${idx}`"
                   :value="getValue(option)"
                   :disabled="isDisabled(option)"
-                  class="text-base leading-none text-ink-gray-7 rounded flex items-center h-7 px-2.5 py-1.5 relative select-none data-[disabled]:opacity-50 data-[disabled]:pointer-events-none data-[highlighted]:outline-none data-[highlighted]:bg-surface-gray-3"
+                  class="text-base leading-none text-ink-gray-7 rounded flex items-center h-7 px-2.5 py-1.5 relative select-none data-disabled:opacity-50 data-disabled:pointer-events-none data-highlighted:outline-none data-[highlighted]:bg-surface-gray-3"
                 >
                   <span class="flex items-center gap-2 pr-6 flex-1">
                     <RenderIcon :icon="getIcon(option)" />
@@ -290,7 +290,7 @@ const handleBlur = (event: FocusEvent) => {
                 :key="index"
                 :value="getValue(optionOrGroup)"
                 :disabled="isDisabled(optionOrGroup)"
-                class="text-base leading-none text-ink-gray-7 rounded flex items-center h-7 px-2.5 py-1.5 relative select-none data-[disabled]:opacity-50 data-[disabled]:pointer-events-none data-[highlighted]:outline-none data-[highlighted]:bg-surface-gray-3"
+                class="text-base leading-none text-ink-gray-7 rounded flex items-center h-7 px-2.5 py-1.5 relative select-none data-disabled:opacity-50 data-disabled:pointer-events-none data-highlighted:outline-none data-[highlighted]:bg-surface-gray-3"
               >
                 <span class="flex items-center gap-2 pr-6 flex-1">
                   <RenderIcon

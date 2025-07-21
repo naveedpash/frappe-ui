@@ -63,7 +63,7 @@
                           <div class="flex items-center space-x-2">
                             <div
                               v-if="icon"
-                              class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full"
+                              class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full"
                               :class="dialogIconBgClasses"
                             >
                               <FeatherIcon

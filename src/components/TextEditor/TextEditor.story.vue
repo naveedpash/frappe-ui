@@ -43,7 +43,7 @@ const customButtons = [
     <Variant title="Basic">
       <div class="p-2">
         <TextEditor
-          editor-class="prose-sm min-h-[4rem] border rounded-b-lg border-t-0 p-2"
+          editor-class="prose-sm min-h-16 border rounded-b-lg border-t-0 p-2"
           :content="value"
           placeholder="Type something..."
           @change="(val) => (value = val)"
@@ -56,7 +56,7 @@ const customButtons = [
       <div class="p-2">
         <TextEditor
           ref="textEditor"
-          editor-class="prose-sm max-w-none min-h-[4rem]"
+          editor-class="prose-sm max-w-none min-h-16"
           :content="customValue"
           @change="(val) => (customValue = val)"
           :starterkit-options="{ heading: { levels: [2, 3, 4] } }"

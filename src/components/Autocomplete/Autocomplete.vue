@@ -62,7 +62,7 @@
             :class="bodyClasses"
           >
             <ComboboxOptions
-              class="max-h-[15rem] overflow-y-auto px-1.5 pb-1.5"
+              class="max-h-60 overflow-y-auto px-1.5 pb-1.5"
               :class="{ 'pt-1.5': hideSearch }"
               static
             >
@@ -127,7 +127,7 @@
                     <div class="flex flex-1 gap-2 overflow-hidden items-center">
                       <div
                         v-if="$slots['item-prefix'] || props.multiple"
-                        class="flex flex-shrink-0"
+                        class="flex shrink-0"
                       >
                         <slot
                           name="item-prefix"
@@ -148,7 +148,7 @@
 
                     <div
                       v-if="$slots['item-suffix'] || option?.description"
-                      class="ml-2 flex-shrink-0"
+                      class="ml-2 shrink-0"
                     >
                       <slot
                         name="item-suffix"

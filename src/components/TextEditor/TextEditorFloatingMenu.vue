@@ -18,7 +18,7 @@
       :title="button.label"
     >
       <component v-if="button.icon" :is="button.icon" class="h-4 w-4" />
-      <span class="inline-block h-4 min-w-[1rem] text-sm leading-4" v-else>
+      <span class="inline-block h-4 min-w-4 text-sm leading-4" v-else>
         {{ button.text }}
       </span>
     </button>

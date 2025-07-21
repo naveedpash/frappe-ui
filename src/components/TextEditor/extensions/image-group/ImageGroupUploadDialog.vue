@@ -62,7 +62,7 @@
               />
               <!-- Caption overlay -->
               <div
-                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent rounded-b-[2px] transition-opacity"
+                class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/60 to-transparent rounded-b-[2px] transition-opacity"
                 :class="
                   editingCaption === `${item.type}-${idx}`
                     ? 'opacity-100'
@@ -125,7 +125,7 @@
                 />
                 <!-- Caption overlay -->
                 <div
-                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent rounded-b-[2px] transition-opacity"
+                  class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/60 to-transparent rounded-b-[2px] transition-opacity"
                   :class="
                     editingCaption === `${item.type}-${idx}`
                       ? 'opacity-100'
