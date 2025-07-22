@@ -1,6 +1,6 @@
 <script>
 import { h, mergeProps } from 'vue'
-import feather from 'feather-icons'
+import * as feather from 'feather-icons'
 
 const validIcons = Object.keys(feather.icons)
 
